@@ -205,6 +205,10 @@ main{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     justify-content: flex-end;
+    /* Override .glowing-border */
+    box-shadow: 
+        0 0 5px var(--glow-color),
+        0 0 0px var(--glow-color);
 }
 /* END FOOTER */
 .card{
