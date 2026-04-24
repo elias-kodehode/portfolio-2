@@ -2,6 +2,7 @@
     --bg-color: hsla(0, 0%, 0%);
     --card-color: hsl(from var(--bg-color) h calc(s + 0) calc(l + 10));
     --brand-color: hsl(185, 100%, 50%);
+    --glow-color: hsl(185, 100%, 50%);
 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -35,19 +36,19 @@ body{
 }
 
 .glowing-border{
-    border: 1px solid var(--brand-color);
+    /* border: 1px solid var(--brand-color); */
     border-radius: 20px;
     box-shadow: 
-        0 0 5px var(--brand-color),
-        inset 0 0 2px var(--brand-color),
-        0 0 0px var(--brand-color);
+        0 0 5px var(--glow-color),
+        inset 0 0 2px var(--glow-color),
+        0 0 0px var(--glow-color);
 }
 
 .glowing-border:hover{
     box-shadow: 
-    0 0 5px var(--brand-color),
-    0 0 15px var(--brand-color),
-    0 0 0px var(--brand-color);
+    0 0 5px var(--glow-color),
+    0 0 15px var(--glow-color),
+    0 0 0px var(--glow-color);
 }
 
 /* HEADER */
@@ -58,9 +59,10 @@ body{
     background-color: var(--card-color);
     padding: 15px;
     border: 1px solid var(--brand-color);
+    /* Override .glowing-border */
     box-shadow: 
-    0 0 5px var(--brand-color),
-    0 0 0px var(--brand-color);
+        0 0 5px var(--glow-color),
+        0 0 0px var(--glow-color);
     border-top: 0;
     border-radius: 20px;
     border-top-left-radius: 0;
